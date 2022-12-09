@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -26,7 +26,7 @@
     <header class="p-5 mb-4 border-5 border-bottom border-dark text-center">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="current-day" class="lead"></p>
     </header>
     <div class="container-lg px-5">
       <!-- Use class for "past", "present", and "future" to apply styles to the
@@ -40,28 +40,76 @@
         -->
 
       <!-- Example of a past time block. The "past" class adds a gray background color. -->
-      <div id="hour-9" class="row time-block past">
+      <div id="hour-9" class="row time-block" data-hour="9">
         <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+        <textarea class="col-8 col-md-10" id="description-9" rows="3"> </textarea>
+        <button class="btn saveBtn btn-nine col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div id="hour-10" class="row time-block" data-hour="10">
+        <div class="col-2 col-md-1 hour text-center py-3">10AM</div>
+        <textarea class="col-8 col-md-10" id="description-10" rows="3"> </textarea>
+        <button class="btn saveBtn btn-ten col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div id="hour-11" class="row time-block" data-hour="11">
+        <div class="col-2 col-md-1 hour text-center py-3">11AM</div>
+        <textarea class="col-8 col-md-10" id="description-11" rows="3"> </textarea>
+        <button class="btn saveBtn btn-elleven col-2 col-md-1" aria-label="save">
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
 
       <!-- Example of a a present time block. The "present" class adds a red background color. -->
-      <div id="hour-10" class="row time-block present">
-        <div class="col-2 col-md-1 hour text-center py-3">10AM</div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+      <div id="hour-12" class="row time-block" data-hour="12">
+        <div class="col-2 col-md-1 hour text-center py-3">12PM</div>
+        <textarea class="col-8 col-md-10" id="description-12" rows="3"> </textarea>
+        <button class="btn saveBtn btn-twelve col-2 col-md-1" aria-label="save">
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
 
       <!-- Example of a future time block. The "future" class adds a green background color. -->
-      <div id="hour-11" class="row time-block future">
-        <div class="col-2 col-md-1 hour text-center py-3">11AM</div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+      <div id="hour-1" class="row time-block" data-hour="1">
+        <div class="col-2 col-md-1 hour text-center py-3">1PM</div>
+        <textarea class="col-8 col-md-10" id="description-1" rows="3"> </textarea>
+        <button class="btn saveBtn btn-one col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div id="hour-2" class="row time-block" data-hour="2">
+        <div class="col-2 col-md-1 hour text-center py-3">2PM</div>
+        <textarea class="col-8 col-md-10" id="description-2" rows="3"> </textarea>
+        <button class="btn saveBtn btn-two col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div id="hour-3" class="row time-block" data-hour="3">
+        <div class="col-2 col-md-1 hour text-center py-3">3PM</div>
+        <textarea class="col-8 col-md-10" id="description-3" rows="3"> </textarea>
+        <button class="btn saveBtn btn-three col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div id="hour-4" class="row time-block" data-hour="4">
+        <div class="col-2 col-md-1 hour text-center py-3">4PM</div>
+        <textarea class="col-8 col-md-10" id="description-4" rows="3"> </textarea>
+        <button class="btn saveBtn btn-four col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div id="hour-5" class="row time-block" data-hour="5">
+        <div class="col-2 col-md-1 hour text-center py-3">5PM</div>
+        <textarea class="col-8 col-md-10" id="description-5" rows="3"> </textarea>
+        <button class="btn saveBtn btn-five col-2 col-md-1" aria-label="save">
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
@@ -73,6 +121,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="script.js"></script>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
